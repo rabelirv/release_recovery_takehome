@@ -1,5 +1,6 @@
 # --- Rails (backend/) ---
 /backend/.bundle
+/backend/vendor/
 /backend/.env*
 /backend/log/*
 /backend/tmp/*
