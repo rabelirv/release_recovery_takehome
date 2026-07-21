@@ -39,6 +39,18 @@ class Api::V1::UsersController < ApplicationController
     render json: { error: "User not found" }, status: :not_found
   end
 
+  def streaks
+    user = User.find(params[:id])
+    calculator = StreakCalculator.new(user)
+
+    render json: {
+      current_streak: calculator.current_streak,
+      longest_streak: calculator.longest_streak
+    }
+  rescue ActiveRecord::RecordNotFound
+    render json: { error: "User not found" }, status: :not_found
+  end
+
   private
 
   def user_params
