@@ -1,3 +1,12 @@
-MissedCheckIn#notify_coach
+Hi <%= @coach.name %>,
 
-<%= @greeting %>, find me in app/views/missed_check_in_mailer/notify_coach.text.erb
+This is a friendly reminder that <%= @client.name %> did not check in on <%= @missed_date.strftime('%B %d, %Y') %>.
+
+You may want to reach out to see how they're doing.
+
+Client Details:
+- Name: <%= @client.name %>
+- Email: <%= @client.email %>
+
+Best,
+Fresh Start Team

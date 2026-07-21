@@ -5,8 +5,13 @@ class MissedCheckInMailer < ApplicationMailer
   #   en.missed_check_in_mailer.notify_coach.subject
   #
   def notify_coach
-    @greeting = "Hi"
+    @client = params[:client]
+    @coach = @client.coach
+    @missed_date = params[:missed_date]
 
-    mail to: "to@example.org"
+    mail(
+      to: @coach.email,
+      subject: "#{@client.name} missed their check-in on #{@missed_date}"
+    )
   end
 end
