@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  date: 2026-07-20
+  mood: 1
+  craving_level: 1
+  attended_meeting: false
+  fresh_start: false
+  notes: MyText
+
+two:
+  user: two
+  date: 2026-07-20
+  mood: 1
+  craving_level: 1
+  attended_meeting: false
+  fresh_start: false
+  notes: MyText

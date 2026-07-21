@@ -3,4 +3,5 @@ class User < ApplicationRecord
 
   belongs_to :coach, class_name: "User", optional: true
   has_many :clients, class_name: "User", foreign_key: "coach_id"
+  has_many :check_ins, dependent: :destroy
 end
