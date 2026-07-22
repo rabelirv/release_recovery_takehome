@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { queryClient } from './lib/queryClient';
 import Dashboard from './pages/Dashboard';
 import CoachDashboard from './pages/CoachDashboard';
-import CheckInHistory from './pages/CheckInHistory';
+import CheckInHistory from './pages/CheckInHistory.tsx';
 
 // Hardcoded user ID for now (we'll add auth later)
 export const CURRENT_USER_ID = 1;
