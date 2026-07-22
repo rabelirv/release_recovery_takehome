@@ -1,5 +1,5 @@
 import apiClient from './client';
-import { User, CheckIn, Streak, CheckInFormData } from '../types';
+import type { User, CheckIn, Streak, CheckInFormData } from '../types';
 
 // User endpoints
 export const userApi = {
