@@ -11,7 +11,7 @@ export interface User {
 export interface CheckIn {
     id: number;
     user_id: number;
-    check_in_date: string;
+    date: string;
     mood: number;
     craving_level: number;
     attended_meeting: boolean;
@@ -28,7 +28,7 @@ export interface Streak {
 }
 
 export interface CheckInFormData {
-    check_in_date: string;
+    date: string;
     mood: number;
     craving_level: number;
     attended_meeting: boolean;

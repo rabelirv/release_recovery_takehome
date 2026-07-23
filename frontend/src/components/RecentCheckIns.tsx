@@ -47,7 +47,7 @@ export default function RecentCheckIns() {
                                     <Calendar size={18} className="text-gray-600 mt-1" />
                                     <div>
                                         <p className="font-semibold text-gray-900">
-                                            {format(new Date(checkIn.check_in_date), 'EEEE, MMM d, yyyy')}
+                                            {format(new Date(checkIn.date), 'EEEE, MMM d, yyyy')}
                                         </p>
                                         <div className="flex items-center gap-4 mt-2 text-sm text-gray-700">
                                             <div className="flex items-center gap-1">
